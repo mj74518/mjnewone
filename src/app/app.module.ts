@@ -11,6 +11,10 @@ import { SignInComponent } from './user/sign-in/sign-in.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { MainContentComponent } from './components/main-content/main-content.component';
 import { ErrorPageComponent } from './components/error-page/error-page.component';
+import { ShopItemsComponent } from './components/shop-items/shop-items.component';
+import { CalDiscountPipe } from './pipes/cal-discount.pipe';
+import { ItemDetailsComponent } from './components/item-details/item-details.component';
+import { HighlightDirective } from './directives/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { ErrorPageComponent } from './components/error-page/error-page.component
     SignInComponent,
     SidebarComponent,
     MainContentComponent,
-    ErrorPageComponent
+    ErrorPageComponent,
+    ShopItemsComponent,
+    CalDiscountPipe,
+    ItemDetailsComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
