@@ -12,7 +12,7 @@
                 <h5><s>₹ {{ i.price + (i.price | calDiscount: i.discount)}} MRP</s></h5>
                 <h5>₹ {{ i.price }} </h5>
                 <h6>You Saved ₹ {{ i.price | calDiscount: i.discount }}</h6>
-                <p appHiglight highlightColor="red" class="card-text">{{ i.description | uppercase}}</p>
+                <p appHighlight highlightColor="#bdc3c7" class="card-text">{{ i.description | uppercase}}</p>
             
                 <span class="badge badge-primary">This product has discount</span>
             </div>
@@ -30,7 +30,7 @@
                     <a routerLink="/item-details/{{i.id}}">{{ i.title | uppercase }}</a>&nbsp; <small>No Discount</small>
                 </h4>
                 <h5>₹ {{ i.price }} </h5>
-                <p appHiglight highlightColor="red" class="card-text">{{ i.description | uppercase }}</p>
+                <p appHighlight highlightColor="#bdc3c7" class="card-text">{{ i.description | uppercase }}</p>
             
                 <span class="badge badge-primary">This product does not have discount</span>
             </div>
